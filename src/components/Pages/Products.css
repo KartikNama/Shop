@@ -1,0 +1,30 @@
+.card{
+    width: 18rem;
+    padding: 10px 0px;
+}
+.products{
+    display: flex;
+    margin: auto;
+}
+.products__id{
+    text-decoration: none;
+}
+.sidebar{
+    min-width: 30%;
+}
+
+.products-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 20px;
+}
+.card-body{
+    text-align: center;
+}
+
+.buttons__admin{
+    display: flex;
+   justify-content: space-evenly;
+}
