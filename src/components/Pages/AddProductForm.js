@@ -4,7 +4,7 @@ import axios from "axios";
 const AddProductForm = (props) => {
 
   const { onAddProduct} = props
-
+  const id = Math.floor(Math.random() * 100) + 1;
   const [enteredTitle, setEnteredTitle] = useState('');
   const [enteredContent, setEnteredContent] = useState('');
   const [enteredImage, setEnteredImage] = useState(null);
@@ -28,7 +28,7 @@ const AddProductForm = (props) => {
   const submitHandler = async (e) => {
     e.preventDefault();
     const newProduct = {
-      id: Math.random(),
+      id: id,
       title: enteredTitle,
       content: enteredContent,
       imageUrl: enteredImage.name,
@@ -55,6 +55,7 @@ const AddProductForm = (props) => {
     <div className="container form-container m-auto">
       <form onSubmit={submitHandler}>
         <div className="form__ins">
+          <input type="hidden" value={id} />
           <div className="productadd__element">
             <label>Title</label>
             <input type="text" value={enteredTitle} className="product__area" onChange={titleChangeHandler} />

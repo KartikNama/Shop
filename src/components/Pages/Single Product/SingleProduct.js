@@ -1,9 +1,7 @@
 import { useParams } from "react-router-dom"
 
 const SingleProduct = ({products}) => {
-
     const {productId } = useParams();
-
    const product = products.find((prod) => prod.id === parseInt(productId));
    console.log("./products-images/" + product.imageUrl);
 
