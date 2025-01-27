@@ -22,7 +22,7 @@ const Products = (props) => {
         <Link to={`/products/${product.id}`} className="products__id">
           <div className="card" key={product.id}>
             <img
-              src={"./products-images/" + product.imageUrl}
+              src={"https://backendshop-o7ve.onrender.com/images/" + product.imageUrl}
               className="card-img-top"
               alt="..."
               />
