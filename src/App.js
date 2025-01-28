@@ -30,7 +30,7 @@ function App() {
         <Header />
         <div className="app-body">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Products products={prods} />}/>
             <Route path="/products" element={<Products products={prods} />} />
             <Route path="/admin" element={<Admin products={prods} onAddProduct={addProductHandler} />} />
             <Route path="/products/:productId" element={<SingleProduct products={prods}/>} />
