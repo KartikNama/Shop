@@ -10,7 +10,7 @@ const Header = () => {
         <div className="navbar__menu">
           <div className="navbar__menu-links">
             <li>
-              <Link className="link" to="/">
+              <Link className="link" to="/Shop">
                 Home
               </Link>
             </li>
