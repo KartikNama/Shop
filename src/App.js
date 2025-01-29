@@ -12,7 +12,7 @@ function App() {
     
   useEffect(() => {
     const fetchProducts = async () =>{
-      const response = await fetch("http://localhost:8080/api/getproducts");
+      const response = await fetch("https://backendshop-o7ve.onrender.com/api/getproducts");
       const products = await response.json()
       setProds(products);
     }
