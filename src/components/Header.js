@@ -5,7 +5,7 @@ const Header = () => {
     <div className="container-fluid navbar-fluid">
       <div className="container navbar">
         <div className="navbar__logo">
-          <img src="/favicon.ico" alt="" />
+          <img src="/Shop/favicon.ico" alt="" />
         </div>
         <div className="navbar__menu">
           <div className="navbar__menu-links">
