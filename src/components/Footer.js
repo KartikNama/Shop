@@ -1,8 +1,11 @@
-import "Footer.css"
+import "./Footer.css"
 const Footer= () =>{
 
     return(
-        <h1>Footer</h1>
+        <div className="footer">
+
+            <h6>Copyright Shop-React@2024 | All Rights Reserved</h6>
+        </div>
     )
 }
 export default Footer
