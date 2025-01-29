@@ -32,7 +32,7 @@ const AddProductForm = (props) => {
     newProduct.append('price', enteredPrice);
     newProduct.append('image', enteredImage);
     try {
-      const response = await axios.post("https://backendshop-o7ve.onrender.com/api/products", newProduct,{
+      const response = await axios.post("https://backendshop-o7ve.onrender.com/products", newProduct,{
         headers: {
           'Content-Type': 'multipart/form-data'
         }
