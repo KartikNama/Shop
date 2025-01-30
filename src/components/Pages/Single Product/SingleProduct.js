@@ -7,7 +7,7 @@ const SingleProduct = ({products}) => {
 
     return(
         <div className="container">
-            <img src={"https://backendshop-o7ve.onrender.com/images/" + product.imageUrl} alt={product.title} />
+            <img src={"http://localhost:8080/images" + product.imageUrl} alt={product.title} />
             <h1>{product.title}</h1>
             <p>{product.content}</p>
             <p>{product.price}</p>
